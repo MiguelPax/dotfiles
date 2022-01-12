@@ -1,3 +1,8 @@
+- defaults:
+    link:
+      create: false
+      relink: true
+
 - clean: ['~']
 
 - link:
@@ -16,5 +21,10 @@
         create: false
         relink: false
         force: false
+    ~/.antigenrc:
+        path: antigenrc
+    ~/.p10k.zsh:
+        path: p10k.zsh
 
-
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
