@@ -1,0 +1,7 @@
+[user]
+	name = MiguelPax
+	email = miguelmholton@gmail.com
+[color]
+	ui = true
+[core]
+	editor = vim

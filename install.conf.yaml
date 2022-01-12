@@ -1,0 +1,20 @@
+- clean: ['~']
+
+- link:
+    ~/.gitconfig:
+        path: gitconfig
+        create: false
+        relink: false
+        force: false
+    ~/.zprofile:
+        path: zprofile
+        create: false
+        relink: false
+        force: false
+    ~/.zshrc:
+        path: zshrc
+        create: false
+        relink: false
+        force: false
+
+
