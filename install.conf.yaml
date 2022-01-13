@@ -25,6 +25,11 @@
         path: antigenrc
     ~/.p10k.zsh:
         path: p10k.zsh
-
+    ~/.config/karabiner/karabiner.json:
+        path: karabiner.json
+    ~/.config/nvim/init.vim:
+        path: init.vim
+    ~/.tmux.conf:
+        path: tmux.conf
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
