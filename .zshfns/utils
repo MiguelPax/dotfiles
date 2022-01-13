@@ -1,0 +1,54 @@
+### UTILS
+# show utils commands and custom aliasses
+local helptxt="
+fp       [find:path]
+kp       [kill:path]
+ks       [kill:tcp]
+lps      [lastpass:copy]
+marco    [marco]
+polo     [polo]
+utils    [utils]
+xmod     [alias]        sh ~/xmodmap.sh
+xm       [alias]        sh ~/xmodmap.sh
+XM       [alias]        sh ~/xmodmap.sh
+gh       [alias]        history|grep
+tcn      [alias]        mv --force -t ~/.local/share/Trash/files
+open     [alias]        xdg-open
+hdmi     [alias]        ~/hdmi.sh
+HDMI     [alias]        ~/hdmi.sh
+install  [alias]        sudo apt install
+purge    [alias]        sudo apt purge
+remove   [alias]        sudo apt remove
+ls       [alias]        lsd
+vim      [alias]        nvim
+vi       [alias]        nvim
+v        [alias]        nvim
+vimdiff  [alias]        nvim -d
+nvimrc   [alias]        nvim ~/.config/nvim/init.vim
+tmuxrc   [alias]        nvim ~/.tmux.conf
+zshrc    [alias]        ${=EDITOR} ${ZDOTDIR:-$HOME}/.zshrc
+stfu     [alias]        amixer -D pulse sset Master 0%
+pumpitup [alias]        amixer -D pulse sset Master 100%
+sayonara [alias]        shutdown -h now
+python   [alias]        python3
+ta       [alias]        tmux attach
+fzfi     [alias]        rg --files --hidden --follow --no-ignore-vcs -g!{node_modules,.git} | fzf
+vifi     [alias]        vim $(fzfi)
+ncdu     disk usage     du but cooler
+bat      better cat
+procs    processes      ps but cooler
+pscircle --output=/tmp/output.png  processess wallpaer
+cowsay   [fun]          cowsay
+cmatrix  [fun]          cmatrix
+hhacker  [fun]          ~/.hollywood-hacker/hack.sh
+nms      [fun]          nms
+fortune  [fun]          fortune
+pipes.sh [fun]          pipes.sh
+"
+
+local cmd=$(echo $helptxt | eval "fzf --header='[utils:show]'" | awk '{print $1}')
+# local cmd=$(echo $helptxt | eval "fzf ${FZF_DEFAULT_OPTS} --header='[utils:show]'" | awk '{print $1}')
+
+if [[ -n $cmd ]]; then
+  eval ${cmd}
+fi
