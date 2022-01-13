@@ -31,8 +31,7 @@ alias ra='ranger'
 alias ranger='source ranger'
 alias fd='fdfind'
 alias find='fdfind'
-alias bat='batcat'
-alias cat='batcat'
+alias cat='bat'
 
 # http://xkcd.com/530/
 alias stfu="amixer -D pulse sset Master 0%"

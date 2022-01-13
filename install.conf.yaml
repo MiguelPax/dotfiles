@@ -31,5 +31,10 @@
         path: init.vim
     ~/.tmux.conf:
         path: tmux.conf
+    ~/.config/ranger/:
+        create: true
+        glob: true
+        path: ranger/*
+        relink: true
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
