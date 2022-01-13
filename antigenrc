@@ -2,17 +2,46 @@
 antigen use oh-my-zsh
 
 # Load bundles from the default repo (oh-my-zsh)
-antigen bundle git
-antigen bundle command-not-found
+antigen bundle    alias-finder
+antigen bundle    bgnotify
+antigen bundle    colored-man-pages
+antigen bundle    colorize
+antigen bundle    command-not-found
+antigen bundle    common-aliases
+antigen bundle    copyfile
+antigen bundle    cp
+antigen bundle    extract
+antigen bundle    fd
+antigen bundle    git
+antigen bundle    pip
+antigen bundle    python
+antigen bundle    ripgrep
+antigen bundle    sudo
+antigen bundle    tmux
+antigen bundle    vi-mode
+antigen bundle    vscode
+antigen bundle    web-search
+antigen bundle    copydir
+antigen bundle    copyfile
+antigen bundle    copybuffer
 antigen bundle docker
 
 # Load bundles from external repos
 antigen bundle zsh-users/zsh-completions
+# antigen bundle bckim92/zsh-autoswitch-conda
+antigen bundle esc/conda-zsh-completion
+antigen bundle Aloxaf/fzf-tab
+
+# Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Select theme
 antigen theme romkatv/powerlevel10k
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+source ~/.sonokai.theme/sonokai/zsh/.zsh-theme-sonokai-shusia
 # Tell Antigen that you're done
 antigen apply

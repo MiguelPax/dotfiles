@@ -32,6 +32,8 @@ Plug 'tmhedberg/SimpylFold'
 " Plug 'szymonmaszke/vimpyter'
 Plug 'machakann/vim-highlightedyank'
 Plug 'jiangmiao/auto-pairs' " auto closing brackets/quotes/...
+Plug 'nanotee/zoxide.vim'
+
 
 
 Plug 'kalekundert/vim-coiled-snake'
@@ -59,6 +61,7 @@ Plug 'chriskempson/base16-vim'         " Base16 themes
 
 Plug 'vim-airline/vim-airline' " status bar
 Plug 'vim-airline/vim-airline-themes' "status bar theme
+Plug 'edkolev/tmuxline.vim' "tmux status bar theme
 Plug 'sheerun/vim-polyglot' " language packs
 " Plug 'vimjas/vim-python-pep8-indent' " python indentation
 " Plug 'liuchengxu/vista.vim' "Viewer & Finder for LSP symbols and tags
@@ -89,6 +92,7 @@ let g:sonokai_style = 'shusia'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme='sonokai'
+
 
 " enable highlighting and stripping whitespace on save by default
 let g:better_whitespace_enabled=1
