@@ -15,19 +15,15 @@ typeset -A ZSH_HIGHLIGHT_STYLES
 
 export ZSH_AUTOSUGGEST_USE_ASYNC="true"
 
-
-# Path to your oh-my-zsh installation.
-# export ZSH="/home/miguel/.oh-my-zsh"
-
 export VISUAL=`which nvim`
 export EDITOR="$VISUAL"
 
 # export SPICETIFY_INSTALL="/home/miguel/spicetify-cli"
 # export PATH="$SPICETIFY_INSTALL:$PATH"
 
-export FZF_DEFAULT_COMMAND='fdfind --hidden --no-ignore'
+export FZF_DEFAULT_COMMAND='fd --hidden --no-ignore'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="fdfind --type directory --hidden --no-ignore"
+export FZF_ALT_C_COMMAND="fd --type directory --hidden --no-ignore"
 
 setopt HIST_IGNORE_SPACE
 setopt ignoreeof

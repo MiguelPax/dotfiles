@@ -29,8 +29,8 @@ alias tmuxrc='nvim ~/.tmux.conf'
 alias zshrc='${=EDITOR} ${ZDOTDIR:-$HOME}/.zshrc'
 alias ra='ranger'
 alias ranger='source ranger'
-alias fd='fdfind'
-alias find='fdfind'
+alias fdfind='fd'
+alias find='fd'
 alias cat='bat'
 
 # http://xkcd.com/530/
