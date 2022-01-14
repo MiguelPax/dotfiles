@@ -63,13 +63,13 @@ keymap(';', 'alt', 'pagedown', '')
 keymap('[', 'alt', 'end', '')
 keymap('p', 'alt', 'home', '')
 
-keymap('a', 'alt', 'home', '')
+-- keymap('a', 'alt', 'home', '')
 -- keymap('e', 'alt', 'é', '')
-keymap('i', 'alt', 'í', '')
-keymap('o', 'alt', 'ó', '')
-keymap('u', 'alt', 'ú', '')
+-- keymap('i', 'alt', 'í', '')
+-- keymap('o', 'alt', 'ó', '')
+-- keymap('u', 'alt', 'ú', '')
 -- keymap('n', 'alt', 'ñ', '')
-keymap('y', 'alt', 'ü', '')
+-- keymap('y', 'alt', 'ü', '')
 
 -- ------------------
 -- delete
@@ -101,12 +101,12 @@ keymap('.', 'alt', 'tab', 'ctrl', REPEAT_SLOWER)
 -- keymap('.', 'alt', 'SOUND_UP', nil)
 -- keymap('/', 'alt', 'MUTE', nil)
 
-keymap('1', 'alt', 'PLAY', nil, NO_REPEAT)
-keymap('2', 'alt', 'REWIND', nil, NO_REPEAT)
-keymap('3', 'alt', 'FAST', nil, NO_REPEAT)
-keymap('f1', 'alt', 'MUTE', nil)
-keymap('f2', 'alt', 'SOUND_DOWN', nil)
-keymap('f3', 'alt', 'SOUND_UP', nil)
+-- keymap('1', 'alt', 'PLAY', nil, NO_REPEAT)
+-- keymap('2', 'alt', 'REWIND', nil, NO_REPEAT)
+-- keymap('3', 'alt', 'FAST', nil, NO_REPEAT)
+-- keymap('f1', 'alt', 'MUTE', nil)
+-- keymap('f2', 'alt', 'SOUND_DOWN', nil)
+-- keymap('f3', 'alt', 'SOUND_UP', nil)
 
 
 hs.hotkey.bind('alt', 's', hs.hid.capslock.toggle, nil, nil)
