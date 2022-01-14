@@ -25,8 +25,11 @@
         path: antigenrc
     ~/.p10k.zsh:
         path: p10k.zsh
-    ~/.config/karabiner/karabiner.json:
-        path: karabiner.json
+    ~/.config/karabiner/assets/complex_modifications/:
+        create: true
+        glob: true
+        path: karabiner/assets/complex_modifications/*
+        relink: true
     ~/.config/nvim/init.vim:
         path: init.vim
     ~/.tmux.conf:
@@ -35,6 +38,11 @@
         create: true
         glob: true
         path: ranger/*
+        relink: true
+    ~/.hammerspoon/:
+        create: true
+        glob: true
+        path: hammerspoon/*
         relink: true
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
