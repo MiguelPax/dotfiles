@@ -20,18 +20,10 @@ vim
 hs.loadSpoon("SpoonInstall")
 spoon.SpoonInstall:andUse("AppLauncher", {
   hotkeys = {
-    a = "Calendar",
-    d = "Discord",
-    x = "Firefox Developer Edition",
-    n = "Notes",
-    p = "1Password 7",
-    r = "Reeder",
-    t = "Kitty",
-    z = "Zoom.us",
-		i = "iTerm2",
-		s = "Spotify",
-		c = "Google Chrome",
-		f = "Finder",
-		b = "Bitwarden",
+		u = "iTerm",
+		y = "Spotify",
+		i = "Google Chrome",
+		-- t = "Finder",
+		o = "Bitwarden",
   }
 })
