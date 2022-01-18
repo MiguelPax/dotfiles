@@ -38,6 +38,7 @@ ncdu     disk usage     du but cooler
 bat      better cat
 procs    processes      ps but cooler
 pscircle --output=/tmp/output.png  processess wallpaer
+fdiff    fzf git diff   fdiff
 cowsay   [fun]          cowsay
 cmatrix  [fun]          cmatrix
 hhacker  [fun]          ~/.hollywood-hacker/hack.sh

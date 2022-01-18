@@ -80,7 +80,7 @@ zstyle ':autocomplete:*:no-matches-at-all' message ''
 # set autoload path
 fpath=(~/.dotfiles/.zshfns $fpath)
 # move cursor to end of line after history search completion
-autoload -Uz cl kp marco polo mkcd fp ks ltree lps utils zranger
+autoload -Uz cl kp marco polo mkcd fp ks ltree lps utils zranger fdiff
 
 # every time we load .zshrc, ditch duplicate path entries
 typeset -U PATH fpath
