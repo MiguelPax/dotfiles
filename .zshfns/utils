@@ -34,7 +34,9 @@ python   [alias]        python3
 ta       [alias]        tmux attach
 fzfi     [alias]        rg --files --hidden --follow --no-ignore-vcs -g!{node_modules,.git} | fzf
 vifi     [alias]        vim $(fzfi)
+showlyrics [alias]      swaglyrics
 ncdu     disk usage     du but cooler
+neofetch [neofetch]     neofetch
 bat      better cat
 procs    processes      ps but cooler
 pscircle --output=/tmp/output.png  processess wallpaer
@@ -45,6 +47,7 @@ hhacker  [fun]          ~/.hollywood-hacker/hack.sh
 nms      [fun]          nms
 fortune  [fun]          fortune
 pipes.sh [fun]          pipes.sh
+say      [fun]          say
 "
 
 local cmd=$(echo $helptxt | eval "fzf --header='[utils:show]'" | awk '{print $1}')

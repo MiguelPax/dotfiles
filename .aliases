@@ -12,10 +12,9 @@ alias -g L="| less"
 alias -g GG="google.com"
 alias -s txt=nvim
 alias -s py=nvim
-alias install="sudo apt install"
-alias purge="sudo apt purge"
-alias remove="sudo apt remove"
-alias upgrade="sudo apt update && sudo apt upgrade"
+alias install="brew install"
+alias remove="brew uninstall"
+alias upgrade="brew update && brew upgrade"
 
 alias ls='lsd'
 alias nvim='nvim'
@@ -37,6 +36,9 @@ alias cat='bat'
 alias stfu="amixer -D pulse sset Master 0%"
 alias pumpitup="amixer -D pulse sset Master 100%"
 alias sayonara='shutdown -h now'
+
+#Alias to show lyrics of current song (Needs swaglyrics installed)
+alias showlyrics="swaglyrics -c"
 
 alias python="python3"
 
