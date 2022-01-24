@@ -109,4 +109,4 @@ keymap('.', 'alt', 'tab', 'ctrl', REPEAT_SLOWER)
 -- keymap('f3', 'alt', 'SOUND_UP', nil)
 
 
-hs.hotkey.bind('alt', 's', hs.hid.capslock.toggle, nil, nil)
+-- hs.hotkey.bind('alt', 's', hs.hid.capslock.toggle, nil, nil)
