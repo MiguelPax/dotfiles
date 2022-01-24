@@ -8,17 +8,13 @@ lps      [lastpass:copy]
 marco    [marco]
 polo     [polo]
 utils    [utils]
-xmod     [alias]        sh ~/xmodmap.sh
-xm       [alias]        sh ~/xmodmap.sh
-XM       [alias]        sh ~/xmodmap.sh
+speedtest-cli
+trash    [utils]        trash [-vlesyF] <file> [<file> …]
 gh       [alias]        history|grep
 tcn      [alias]        mv --force -t ~/.local/share/Trash/files
 open     [alias]        xdg-open
-hdmi     [alias]        ~/hdmi.sh
-HDMI     [alias]        ~/hdmi.sh
-install  [alias]        sudo apt install
-purge    [alias]        sudo apt purge
-remove   [alias]        sudo apt remove
+install  [alias]        brew install
+remove   [alias]        brew uninstall
 ls       [alias]        lsd
 vim      [alias]        nvim
 vi       [alias]        nvim
