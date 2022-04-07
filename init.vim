@@ -33,47 +33,50 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'machakann/vim-highlightedyank'
 Plug 'jiangmiao/auto-pairs' " auto closing brackets/quotes/...
 Plug 'nanotee/zoxide.vim'
-
-
-
-Plug 'kalekundert/vim-coiled-snake'
-Plug 'Konfekt/FastFold'
-Plug 'tmux-plugins/vim-tmux'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'tjdevries/train.nvim'
-Plug 'rbgrouleff/bclose.vim'
-Plug 'ryanoasis/vim-devicons'
-Plug 'bfrg/vim-jq'
-Plug 'reedes/vim-pencil'
-Plug 'rhysd/clever-f.vim'
-Plug 'junegunn/vim-peekaboo'
+Plug 'chaoren/vim-wordmotion'
 Plug 'svermeulen/vim-yoink'
-Plug 'patstockwell/vim-monokai-tasty'
-Plug 'sainnhe/sonokai'                 " Monokai Pro-like scheme
-Plug 'chriskempson/base16-vim'         " Base16 themes
 
 
-"Heavy Duty
-" Plug 'vim-syntastic/syntastic' " syntax checkings
-" Plug 'nvie/vim-flake8' " python syntax and style checker
-" Plug 'jeetsukumaran/vim-pythonsense'
-" Plug 'dense-analysis/ale' "Asynchronous linting with LSPPAP
+if !exists('g:vscode')
 
-Plug 'vim-airline/vim-airline' " status bar
-Plug 'vim-airline/vim-airline-themes' "status bar theme
-Plug 'edkolev/tmuxline.vim' "tmux status bar theme
-Plug 'sheerun/vim-polyglot' " language packs
-" Plug 'vimjas/vim-python-pep8-indent' " python indentation
-" Plug 'liuchengxu/vista.vim' "Viewer & Finder for LSP symbols and tags
-" Plug 'neoclide/coc.nvim', {'branch': 'release'} "LSP engine
-" Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
-" Plug 'francoiscabrol/ranger.vim'
-" Plug 'jpalardy/vim-slime', { 'for': 'python' }
-" Plug 'hanschen/vim-ipython-cell', { 'for': 'python' }
-" Plug 'justinmk/vim-dirvish'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+		Plug 'kalekundert/vim-coiled-snake'
+		Plug 'Konfekt/FastFold'
+		Plug 'tmux-plugins/vim-tmux'
+		Plug 'christoomey/vim-tmux-navigator'
+		Plug 'tjdevries/train.nvim'
+		Plug 'rbgrouleff/bclose.vim'
+		Plug 'ryanoasis/vim-devicons'
+		Plug 'bfrg/vim-jq'
+		Plug 'reedes/vim-pencil'
+		Plug 'rhysd/clever-f.vim'
+		Plug 'junegunn/vim-peekaboo'
+		Plug 'patstockwell/vim-monokai-tasty'
+		Plug 'sainnhe/sonokai'                 " Monokai Pro-like scheme
+		Plug 'chriskempson/base16-vim'         " Base16 themes
 
+
+		"Heavy Duty
+		" Plug 'vim-syntastic/syntastic' " syntax checkings
+		" Plug 'nvie/vim-flake8' " python syntax and style checker
+		" Plug 'jeetsukumaran/vim-pythonsense'
+		" Plug 'dense-analysis/ale' "Asynchronous linting with LSPPAP
+
+		Plug 'vim-airline/vim-airline' " status bar
+		Plug 'vim-airline/vim-airline-themes' "status bar theme
+		Plug 'edkolev/tmuxline.vim' "tmux status bar theme
+		Plug 'sheerun/vim-polyglot' " language packs
+		" Plug 'vimjas/vim-python-pep8-indent' " python indentation
+		" Plug 'liuchengxu/vista.vim' "Viewer & Finder for LSP symbols and tags
+		" Plug 'neoclide/coc.nvim', {'branch': 'release'} "LSP engine
+		" Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
+		" Plug 'francoiscabrol/ranger.vim'
+		" Plug 'jpalardy/vim-slime', { 'for': 'python' }
+		" Plug 'hanschen/vim-ipython-cell', { 'for': 'python' }
+		" Plug 'justinmk/vim-dirvish'
+		Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+		Plug 'junegunn/fzf.vim'
+
+endif
 call plug#end()
 
 
