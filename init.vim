@@ -17,6 +17,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-line'
 Plug 'kana/vim-textobj-entire'
+Plug 'jeetsukumaran/vim-pythonsense'
 Plug 'lucapette/vim-textobj-underscore'
 Plug 'airblade/vim-gitgutter'
 Plug 'ntpeters/vim-better-whitespace'
@@ -58,7 +59,6 @@ if !exists('g:vscode')
 		"Heavy Duty
 		" Plug 'vim-syntastic/syntastic' " syntax checkings
 		" Plug 'nvie/vim-flake8' " python syntax and style checker
-		" Plug 'jeetsukumaran/vim-pythonsense'
 		" Plug 'dense-analysis/ale' "Asynchronous linting with LSPPAP
 
 		Plug 'vim-airline/vim-airline' " status bar

@@ -23,6 +23,7 @@ spoon.SpoonInstall:andUse("AppLauncher", {
 		y = "Spotify",
 		i = "Google Chrome",
 		-- t = "Finder",
-		o = "Bitwarden",
+    p = "Slack",
+		o = "Visual Studio Code"
   }
 })
