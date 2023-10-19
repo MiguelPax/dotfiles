@@ -46,14 +46,15 @@ end
 -- ------------------
 local arrows = {
     h = 'left',
-    j = 'down',
+    m = 'down',
     k = 'up',
     l = 'right'
 }
 for k, v in pairs(arrows) do
     keymap(k, 'alt', v, '')
-    keymap(k, 'alt+shift', v, 'alt')
-    keymap(k, 'alt+shift+ctrl', v, 'shift')
+    keymap(k, 'alt+ctrl', v, 'alt')
+    keymap(k, 'alt+shift', v, 'shift')
+    keymap(k, 'alt+shift+ctrl', v, 'alt+shift')
 end
 
 -- keymap('y', 'alt', 'home', '')

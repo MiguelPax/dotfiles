@@ -1,11 +1,11 @@
-alias xmod='sh ~/xmodmap.sh'
-alias xm='sh ~/xmodmap.sh'
-alias XM='sh ~/xmodmap.sh'
+# alias xmod='sh ~/xmodmap.sh'
+# alias xm='sh ~/xmodmap.sh'
+# alias XM='sh ~/xmodmap.sh'
 alias gh='history|grep'
-alias tcn='mv --force -t ~/.local/share/Trash/files '
-alias open='xdg-open'
-alias hdmi='~/hdmi.sh'
-alias HDMI='~/hdmi.sh'
+# alias tcn='mv --force -t ~/.local/share/Trash/files '
+# alias open='xdg-open'
+# alias hdmi='~/hdmi.sh'
+# alias HDMI='~/hdmi.sh'
 
 alias -g G="| grep"
 alias -g L="| less"
@@ -33,9 +33,9 @@ alias find='fd'
 alias cat='bat'
 
 # http://xkcd.com/530/
-alias stfu="amixer -D pulse sset Master 0%"
-alias pumpitup="amixer -D pulse sset Master 100%"
-alias sayonara='shutdown -h now'
+# alias stfu="amixer -D pulse sset Master 0%"
+# alias pumpitup="amixer -D pulse sset Master 100%"
+# alias sayonara='shutdown -h now'
 
 #Alias to show lyrics of current song (Needs swaglyrics installed)
 alias showlyrics="swaglyrics -c"
@@ -46,12 +46,14 @@ alias ta='tmux attach'
 
 alias fzfi='rg --files --hidden --follow --no-ignore-vcs -g "!{node_modules,.git}" 2> /dev/null | fzf'
 alias vifi='vim $(fzfi)'
+alias fzf='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"'
 
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
+# alias pbcopy='xclip -selection clipboard'
+# alias pbpaste='xclip -selection clipboard -o'
 
-alias sierra='nmcli c up BARSIERRA'
-alias speaker='bluetoothctl connect E8:07:BF:08:E0:BF'
-alias nospeaker='bluetoothctl disconnect E8:07:BF:08:E0:BF'
+# alias sierra='nmcli c up BARSIERRA'
+# alias speaker='bluetoothctl connect E8:07:BF:08:E0:BF'
+# alias nospeaker='bluetoothctl disconnect E8:07:BF:08:E0:BF'
 
-alias weather='curl wttr.in/Espinar'
+alias weather='curl wttr.in/Berlin'
+alias find-alias='PS4="+%x:%I>" zsh -i -x -c '' |& grep'
